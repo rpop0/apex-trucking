@@ -11,7 +11,7 @@
     position: absolute;
     right: 14%;
     top: -18px;
-    background-image: url("~/assets/images/home-arrow.svg");
+    background-image: url("@/assets/images/home-arrow.svg");
     background-repeat: no-repeat;
     z-index: -1;
   }
@@ -33,6 +33,7 @@
     z-index: 10;
   }
 }
+
 /* End NavBar */
 
 /* Start Buttons */
@@ -105,7 +106,7 @@
   }
 }
 
-@media only screen and(max-width: 1279px) {
+@media only screen and (max-width: 1279px) {
   .about-us {
     margin-top: 10px;
     .under-title {
@@ -124,7 +125,7 @@
     right: -20px;
   }
 }
-@media only screen and(max-width: 1279px) {
+@media only screen and (max-width: 1279px) {
   .core-image {
     display: none;
   }
@@ -143,7 +144,7 @@
 /* End Divisions */
 
 /* Footer Start */
-@media only screen and(max-width: 1024px) {
+@media only screen and (max-width: 1024px) {
   .footer-links {
     display: none !important;
   }

@@ -2,7 +2,7 @@
   <div class="container px-5 md:px-0 md:mx-auto mt-20 pb-10">
     <div class="flex md:justify-between justify-center items-center">
       <div class="md:text-left text-center">
-        <img src="@/assets/images/logo.svg" style="height: 60px">
+        <img src="../assets/images/logo.svg" style="height: 60px">
         <div class="flex gap-7 mt-3">
           <a href="#" class="text-gray-400"><font-awesome-icon icon="fa-brands fa-facebook" /></a>
           <a href="#" class="text-gray-400"><font-awesome-icon icon="fa-brands fa-twitter" /></a>

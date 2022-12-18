@@ -2,11 +2,13 @@
 export default defineNuxtConfig({
     css: [
         '@/assets/css/main.scss',
+        '@/assets/css/components.scss',
+        '@/assets/css/animations.scss',
         '@fortawesome/fontawesome-svg-core/styles.css',
     ],
 
     plugins: [
-        '@/plugins/fontawesome.js'
+        '@/plugins/fontawesome.js',
     ],
 
     build: {
@@ -19,13 +21,11 @@ export default defineNuxtConfig({
         ]
     },
 
-
-
     postcss: {
         plugins: {
             tailwindcss: {},
             autoprefixer: {}
         }
-    }
+    },
 
 })
