@@ -27,8 +27,9 @@
   }
 
   .navbar-links {
-    height: 100vh;
+    height: 100%;
     padding: 20px;
+    width: 220px;
     left: 0;
     z-index: 10;
   }
@@ -37,12 +38,8 @@
 /* End NavBar */
 
 /* Start Buttons */
-.btn {
-  background-color: #00F3B3;
-}
-.btn:disabled {
-  opacity: 0.5;
-}
+
+
 /* End Button */
 
 /* Main Header Start */

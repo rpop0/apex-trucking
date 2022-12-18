@@ -15,6 +15,10 @@ module.exports = {
       sans: ['Poppins', 'sans-serif'],
       'soulmaze': ['MADE-Soulmaze'],
       'soulmaze-outline': ['MADE-Soulmaze-Outline']
+    },
+    colors: {
+      'apex-green': '#00F3B3',
+      'apex-purple': '#9261f8'
     }
   },
   plugins: [

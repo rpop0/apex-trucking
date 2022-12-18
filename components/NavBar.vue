@@ -15,21 +15,21 @@
                 block lg:hidden
               "
           >
-            <div class="hamburger" :class="[showMenu ? 'hamburger-is-open' : '']">
+            <div class="hamburger hover:scale-110" :class="[showMenu ? 'hamburger-is-open' : '']">
               <div class="hamburger_item hamburger_item--first" :class="[showMenu ? 'hamburger-is-open' : '']"></div>
               <div class="hamburger_item hamburger_item--middle" :class="[showMenu ? 'hamburger-is-open' : '']"></div>
               <div class="hamburger_item hamburger_item--last" :class="[showMenu ? 'hamburger-is-open' : '']"></div>
             </div>
           </button>
         </div>
-        <div :class="showMenu ? 'flex' : 'hidden'" class="
+        <div :class="{'slide-nav-shown': showMenu}" class="
+              slide-nav
+              flex
               navbar-links
-              absolute lg:relative
+              fixed lg:relative
               top-0 lg:top-auto
               bg-white lg:bg-transparent
-              max-w-max lg:max-w-none
-              flex-col lg:flex
-              slide-out-left-mobile
+              flex-col
               shadow-lg
               lg:shadow-none
               lg:space-y-0
@@ -37,12 +37,12 @@
               lg:items-center
               lg:space-x-10
               lg:mt-0 lg:gap-14 gap-6 font-semibold items-center">
-          <img class="logo md:hidden" src="../assets/images/logo.svg">
-          <NuxtLink to="/">Acasă</NuxtLink>
-          <a href="#">Despre Noi</a>
-          <a href="#">Contact</a>
-          <NuxtLink to="/dashboard">Driver Hub</NuxtLink>
-          <NuxtLink to="apply" class="btn py-2 px-7 rounded-full">Aplică acum!</NuxtLink>
+          <img class="logo lg:hidden" src="../assets/images/logo.svg">
+          <NuxtLink class="nav-underline" to="/">Acasă</NuxtLink>
+          <a class="nav-underline" href="#">Despre Noi</a>
+          <a class="nav-underline" href="#">Contact</a>
+          <NuxtLink  class="nav-underline" to="/dashboard">Driver Hub</NuxtLink>
+          <NuxtLink to="apply" class="bg-apex-green transition-colors hover:bg-apex-purple py-2 px-7 rounded-full">Aplică acum!</NuxtLink>
         </div>
       </div>
     </div>
@@ -58,6 +58,11 @@ export default {
   data () {
     return {
       showMenu: false,
+    }
+  },
+  watch: {
+    '$route' () {
+      this.showMenu = false;
     }
   }
 }
