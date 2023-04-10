@@ -1,8 +1,10 @@
 <template>
-  <MainHeader />
-  <AboutUs />
-  <OurCore />
-  <Divisions />
+  <NuxtLayout :name="layout">
+    <MainHeader />
+    <AboutUs />
+    <OurCore />
+    <Divisions />
+  </NuxtLayout>
 </template>
 
 <script>
@@ -14,10 +16,13 @@ import AboutUs from "~/components/AboutUs.vue";
 import Divisions from "~/components/Divisions.vue";
 
 export default {
-
   name: "index",
   components: {NavBar, MainHeader, Footer, OurCore, AboutUs, Divisions},
 }
+</script>
+
+<script setup>
+const layout = "homepage";
 </script>
 
 <style scoped>

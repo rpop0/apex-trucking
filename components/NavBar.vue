@@ -4,7 +4,7 @@
       <div class="flex mx-auto
           md:flex md:justify-between md:items-center navbar-mobile py-7">
         <div class="flex justify-between md-full">
-          <img class="logo ml-8 md:ml-0" src="../assets/images/logo.svg">
+          <img class="logo ml-8 md:ml-0" src="@/assets/images/logo.svg">
           <button
               @click="showMenu = !showMenu"
               type="button"
@@ -41,7 +41,7 @@
           <NuxtLink class="nav-underline" to="/">Acasă</NuxtLink>
           <a class="nav-underline" href="#">Despre Noi</a>
           <a class="nav-underline" href="#">Contact</a>
-          <NuxtLink  class="nav-underline" to="/dashboard">Driver Hub</NuxtLink>
+          <NuxtLink  class="nav-underline" to="/hub">Driver Hub</NuxtLink>
           <NuxtLink to="apply" class="bg-apex-green transition-colors hover:bg-apex-purple py-2 px-7 rounded-full">Aplică acum!</NuxtLink>
         </div>
       </div>
